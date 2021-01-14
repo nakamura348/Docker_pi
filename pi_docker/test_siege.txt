@@ -1,2 +1,2 @@
-http://192.168.10.7:8080/show_user.php
-http://192.168.10.7:8080/show_goods.php
+http://192.168.10.198:8080/show_user.php
+http://192.168.10.198:8080/show_goods.php
