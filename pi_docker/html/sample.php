@@ -8,7 +8,7 @@ try{
     $db =new PDO(PDO_DSN, DB_USERNAME, BD_PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $user_name = "Michael";
+    $user_name = "田中";
     $stmt = $db->prepare("insert into user (user_name) values (:name)");
     $stmt->execute([':name'=>$user_name]);
     echo "inserted:" ;
