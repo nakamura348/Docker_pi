@@ -9,10 +9,10 @@ services:
       - ./html:/var/www/html
     ports:
       - 8080:80
-    deploy:
-      resources:
-        limits:
-          memory: 50M
+    ##deploy:
+      ## resources: 
+       ## limits:
+         ## memory: 50M
 
     network_mode: "pi_test_network"
 
@@ -29,10 +29,10 @@ services:
       - MYSQL_DATABASE=test
       - MYSQL_USER=TEST
       - MYSQL_PASSWORD=test
-    deploy:
-      resources:
-        limits:
-          memory: 50M
+    ##deploy:
+      ##resources:
+        ##limits:
+          ##memory: 50M
 
     network_mode: "pi_test_network"
 
