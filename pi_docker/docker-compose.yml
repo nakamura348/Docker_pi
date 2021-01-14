@@ -1,0 +1,42 @@
+version: '3'
+services:
+  php:
+    container_name: php7.2_test_pi
+    build:
+      context: ./html
+      dockerfile: Dockerfile
+    volumes: 
+      - ./html:/var/www/html
+    ports:
+      - 8080:80
+    deploy:
+      resources:
+        limits:
+          memory: 50M
+
+    network_mode: "pi_test_network"
+
+  mysql:
+    container_name: mariadb_test_pi
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    volumes:
+      - ./mysql/mysql_conf:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=TEST
+      - MYSQL_PASSWORD=test
+    deploy:
+      resources:
+        limits:
+          memory: 50M
+
+    network_mode: "pi_test_network"
+
+
+  
+
+      

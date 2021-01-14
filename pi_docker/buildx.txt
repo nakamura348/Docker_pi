@@ -1,0 +1,1 @@
+docker buildx build ./ -t php_pi --platform linux/arm/v7

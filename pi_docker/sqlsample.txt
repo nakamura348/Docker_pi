@@ -1,0 +1,11 @@
+create table user (
+     user_id int NOT NULL AUTO_INCREMENT PRIMARY kEY,
+     user_name VARCHAR(100) NOT NULL
+     );
+
+
+create table goods (
+     goods_id int NOT NULL AUTO_INCREMENT PRIMARY kEY,
+     goods_name VARCHAR(100) NOT NULL,
+     goods_num int
+     );
