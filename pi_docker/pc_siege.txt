@@ -1,3 +1,2 @@
 http://192.168.10.4:8080/show_user.php
 http://192.168.10.4:8080/show_goods.php
-http://192.168.10.4:8080/phpinfo.php
