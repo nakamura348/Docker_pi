@@ -1,2 +1,0 @@
-http://192.168.10.14:8080/show_user.php
-http://192.168.10.14:8080/show_goods.php
