@@ -1,6 +1,6 @@
 フォルダ  
-    html:dockerで使用したApache  
-    mysql:dockerで使用したmariasb  
+    html:dockerのApacheで使用したフォルダ  
+    mysql:dockerのmariasbで使用したフォルダ  
     siege:ベンチマークで使用したテキストファイル一覧
 
 ファイル  
